@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+        const iva=18;
+        function decirHola(){
+            alert("hola");
+            console.log("Si soy");
+        }
+
+        //objeto json
+        var puerta =
+            {
+            "id":1,
+            getShit:function(){
+                alert("get shit");
+            },
+            "nombre":"Puerta de roble",
+            "precio":250.25,
+            "etiquetas":["puerta","madera","roble"],
+            sumaIGV:function(precio, iva){
+                    var res=precio+iva;
+                    return res;
+                },
+            restaIGV: function(precio,iva) {
+                var res=precio-iva;
+                    alert("Resultado de resta IGV: "+res)
+            }
+        }
+        
+        var resultadoSuma= "Resultado de suma IGV: "+puerta.sumaIGV(puerta.precio,iva);
+        //decirHola();
+        alert(resultadoSuma);
+      
+        
+        /*
+            {
+            "id":2,
+            "nombre":"Puerta de roble2",
+            "precio":250,
+            "etiquetas":["puerta","madera","roble"]
+            }
+
+        var puerta2 = puerta.find(p=>p.id==2);
+        console.log(puerta2.nombre)
+        console.log(puerta2.precio)
+        */
+        
+
+    </script>
+</head>
+
+<body>
+    Hola este es un texto en html
+
+
+</body>
+
+</html>
